@@ -8,13 +8,14 @@ import java.util.List;
  */
 public class Plantilla {
     private List<Empleado> empleados;
-
+    
     /**
      * Constructor de la clase Plantilla.
      * Inicializa la lista de empleados.
      */
     public Plantilla() {
         empleados = new ArrayList<>();
+        
     }
 
     /**
@@ -27,6 +28,7 @@ public class Plantilla {
         if (empleado == null) {
             throw new IllegalArgumentException("No se puede contratar un empleado nulo");
         }
+       
         empleados.add(empleado);
     }
 
